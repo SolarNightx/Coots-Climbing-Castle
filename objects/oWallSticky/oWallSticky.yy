@@ -25,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sWallSticky",
+    "path": "sprites/sWallSticky/sWallSticky.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
