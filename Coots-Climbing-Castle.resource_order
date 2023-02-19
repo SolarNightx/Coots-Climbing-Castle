@@ -16,7 +16,11 @@
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
+    {"name":"sWallSticky","order":3,"path":"sprites/sWallSticky/sWallSticky.yy",},
+    {"name":"sBackground","order":2,"path":"sprites/sBackground/sBackground.yy",},
     {"name":"sWall","order":1,"path":"sprites/sWall/sWall.yy",},
+    {"name":"oWallSticky","order":3,"path":"objects/oWallSticky/oWallSticky.yy",},
   ],
 }
