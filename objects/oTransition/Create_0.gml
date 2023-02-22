@@ -15,3 +15,4 @@ mode = TRANS_MODE.INTRO;
 percent = 1;
 target = room;
 in_menu = false;
+played_transistion_sn = false;

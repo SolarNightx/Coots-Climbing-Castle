@@ -8,7 +8,7 @@ walksp = 4;
 jumpsp = 10;
 jumpt = 10;
 pushsp = 10;
-vspmax = 0.2 * game_get_speed(gamespeed_fps) * 0.75;
+vspmax = 0.2 * game_get_speed(gamespeed_fps) * 0.5;
 
 function checkCollisionX(hspe) {
 	if (place_meeting(x+hspe, y, oWall) or place_meeting(x+hspe, y, oWallSticky)) {
@@ -40,12 +40,13 @@ StateFree = function() {
 	if (place_meeting(x,y+1,oWall) or place_meeting(x,y+1,oWallSticky)) {
 		hsp = move * walksp;
 	} else {
-		hsp += move / 8;
+		hsp += move / 12;
 		hsp = clamp(hsp, -walksp, walksp)*0.99;
 	}
 	vsp += grv;
 	
 	if (key_jump) and (jumpt >= 0) {
+		audio_play_sound(snJump, 5, false);
 		vsp = -jumpsp;
 		jumpt = -1;
 	}
@@ -77,6 +78,7 @@ StateWall = function() {
 		state = StateFree;
 	}
 	if (key_jump) {
+		audio_play_sound(snJump, 5, false);
 		if (place_meeting(x+1, y, oWallSticky)) {
 			hsp = -pushsp;
 		} else {
@@ -96,6 +98,7 @@ StateRoof = function() {
 	}
 	var move = sign(key_right - key_left);
 	if (key_jump) {
+		audio_play_sound(snJump, 5, false);
 		if (move < 0) {
 			hsp = -pushsp;
 		} else if (move > 0) {
