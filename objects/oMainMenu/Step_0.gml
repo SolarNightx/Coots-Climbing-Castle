@@ -27,7 +27,6 @@ if (menu_control) {
 
 if (menu_x > gui_width + 150) and (menu_committed != -1) {
 	
-	audio_play_sound(snClick, 10, false);
 	switch (menu_committed) {
 		case 2: default: SlideTransistion(TRANS_MODE.NEXT); break;
 		//case 1: SlideTransition(TRANS_MODE.GOTO, rMenuOptions); break;

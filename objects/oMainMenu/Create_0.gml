@@ -1,7 +1,7 @@
 /// @description GUI/Vars/Menu setup
 
-gui_width = display_get_gui_width();
-gui_height = display_get_gui_height();
+gui_width = view_wport[0];
+gui_height = view_hport[0];
 gui_margin = 32;
 
 menu_x = gui_width + 200;

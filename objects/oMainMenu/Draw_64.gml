@@ -1,5 +1,14 @@
 /// @description Draw Menu
 
+gui_width = view_wport[0];
+gui_height = view_hport[0];
+gui_margin = 32;
+
+menu_y = gui_height - gui_margin;
+if (menu_committed == -1) {
+	menu_x_target = gui_width - gui_margin;
+}
+
 draw_set_font(fMenu);
 draw_set_halign(fa_right);
 draw_set_valign(fa_bottom);

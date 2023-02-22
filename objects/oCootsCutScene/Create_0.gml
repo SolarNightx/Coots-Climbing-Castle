@@ -26,9 +26,7 @@ function checkCollisionY(vspe) {
 		while (!place_meeting(x,y+sign(vspe),oWall) and !place_meeting(x,y+sign(vspe),oWallSticky)) {
 			y += sign(vspe);
 		}
-		if (place_meeting(x, y+1, oWall) or place_meeting(x, y+1, oWallSticky)) {
-			jumpt = 12;
-		}
+		jumpt = 12;
 		return 0;
 	} else {
 		return vspe;

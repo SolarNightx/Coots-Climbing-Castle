@@ -1,7 +1,7 @@
 /// @description Size variables and mode setup
 
-w = display_get_gui_width();
-h = display_get_gui_height();
+w = browser_width;
+h = browser_height;
 h_half = h/2;
 enum TRANS_MODE
 {

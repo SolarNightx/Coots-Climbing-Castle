@@ -1,4 +1,7 @@
 /// @description Progress the transition
+w = view_wport[0];
+h = view_hport[0];
+h_half = h/2;
 
 if (mode != TRANS_MODE.OFF) {
 	if (mode == TRANS_MODE.INTRO) {
@@ -34,3 +37,5 @@ if (mode != TRANS_MODE.OFF) {
 		}
 	}
 }
+
+if (view_wport[0] != min(browser_width, 1920) or view_hport[0] != min(browser_height, 1080)) scale_canvas(1920, 1080, browser_width, browser_height, true);
