@@ -39,7 +39,7 @@ function checkCollisionY(vspe) {
 }
 
 StateFree = function() {
-	show_debug_message("StateFree");
+	//show_debug_message("StateFree");
 	var move = sign(key_right - key_left);
 
 	if (place_meeting(x,y+1,oWall) or place_meeting(x,y+1,oWallSticky)) {
@@ -96,7 +96,7 @@ StateFree = function() {
 }
 
 StateWall = function() {
-	show_debug_message("StateWall");
+	//show_debug_message("StateWall");
 	if (key_down) {
 		image_speed = 1;
 		hsp = 0;
@@ -128,7 +128,7 @@ StateWall = function() {
 }
 
 StateRoof = function() {
-	show_debug_message("StateRoof");
+	//show_debug_message("StateRoof");
 	image_yscale = -scale;
 	while (place_meeting(x, y, oWallSticky)) {
 		y ++;

@@ -2,16 +2,13 @@
 
 gui_width = view_wport[0];
 gui_height = view_hport[0];
-gui_margin = 32;
 
-menu_y = gui_height - gui_margin;
-if (menu_committed == -1) {
-	menu_x_target = gui_width - gui_margin;
-}
+menu_x = gui_width/2;
+menu_y = gui_height/2;
 
 draw_set_font(fMenu);
-draw_set_halign(fa_right);
-draw_set_valign(fa_bottom);
+draw_set_halign(fa_center);
+draw_set_valign(fa_center);
 
 for (var i = 0; i < menu_items; i++) {
 	
@@ -20,6 +17,7 @@ for (var i = 0; i < menu_items; i++) {
 	
 	if (menu_cursor == i) {
 		txt = string_insert("> ", txt, 0);
+		txt = string_insert(" <", txt, string_length(txt)+1);
 		var col = c_white;
 	} else {
 		var col = c_gray;

@@ -2,12 +2,9 @@
 
 gui_width = view_wport[0];
 gui_height = view_hport[0];
-gui_margin = 32;
 
-menu_x = gui_width + 200;
-menu_y = gui_height - gui_margin;
-menu_x_target = gui_width - gui_margin;
-menu_speed = 25; // Lower is faster
+menu_x = gui_width/2;
+menu_y = gui_height/2;
 menu_font = fMenu;
 menu_itemheight = font_get_size(fMenu);
 menu_committed = -1;
