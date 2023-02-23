@@ -19,3 +19,5 @@ menu[0] = "Quit";
 
 menu_items = array_length(menu);
 menu_cursor = 2;
+
+music_started = false;
