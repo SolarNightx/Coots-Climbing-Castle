@@ -36,6 +36,7 @@
     {"name":"snMusicBG","order":4,"path":"sounds/snMusicBG/snMusicBG.yy",},
     {"name":"Level4","order":3,"path":"rooms/Level4/Level4.yy",},
     {"name":"fMenuLogo","order":1,"path":"fonts/fMenuLogo/fMenuLogo.yy",},
+    {"name":"SlideTransitionOptions","order":2,"path":"scripts/SlideTransitionOptions/SlideTransitionOptions.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
     {"name":"sCastleTiles","order":5,"path":"sprites/sCastleTiles/sCastleTiles.yy",},
     {"name":"sScratching","order":8,"path":"sprites/sScratching/sScratching.yy",},

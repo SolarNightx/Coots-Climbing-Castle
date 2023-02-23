@@ -73,13 +73,13 @@ if (in_menu) {
 				in_menu = false;
 				menu_committed = -1;
 				break;
-			}/*
+			}
 			case 1: 
 			{
-				SlideTransition(TRANS_MODE.GOTO, rMenuOptions);
+				SlideTransitionOptions(room);
 				menu_committed = -1;
 				break;
-			}*/
+			}
 			case 0: game_end(); break;
 		}
 	}	

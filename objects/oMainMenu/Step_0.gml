@@ -29,7 +29,7 @@ if (menu_committed != -1) {
 	}
 	switch (menu_committed) {
 		case 2: default: SlideTransistion(TRANS_MODE.NEXT); break;
-		//case 1: SlideTransition(TRANS_MODE.GOTO, rMenuOptions); break;
+		case 1: SlideTransitionOptions(room); break;
 		case 0: game_end(); break;
 	}
 	

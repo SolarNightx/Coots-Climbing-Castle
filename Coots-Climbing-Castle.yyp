@@ -55,6 +55,7 @@
     {"id":{"name":"snMusicBG","path":"sounds/snMusicBG/snMusicBG.yy",},"order":4,},
     {"id":{"name":"Level4","path":"rooms/Level4/Level4.yy",},"order":3,},
     {"id":{"name":"fMenuLogo","path":"fonts/fMenuLogo/fMenuLogo.yy",},"order":1,},
+    {"id":{"name":"SlideTransitionOptions","path":"scripts/SlideTransitionOptions/SlideTransitionOptions.yy",},"order":2,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
     {"id":{"name":"sCastleTiles","path":"sprites/sCastleTiles/sCastleTiles.yy",},"order":5,},
     {"id":{"name":"tsCastle","path":"tilesets/tsCastle/tsCastle.yy",},"order":0,},
