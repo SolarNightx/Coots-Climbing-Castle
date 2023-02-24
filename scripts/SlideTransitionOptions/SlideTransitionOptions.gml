@@ -1,9 +1,9 @@
 /// @desc SlideTransitionOptions(currentRoom)
 /// @arg currentRoom sets the room to return to.
 
-function SlideTransitionOptions(){
+function SlideTransitionOptions(currentRoom){
 	SlideTransistion(TRANS_MODE.GOTO, MenuOptions);
 	with(oOptionsMenu) {
-		originRoom = argument0;
+		originRoom = currentRoom;
 	}
 }

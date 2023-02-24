@@ -1,5 +1,4 @@
 /// @description GUI/Vars/Menu setup
-
 originRoom = 0;
 volume = 1;
 
@@ -13,8 +12,8 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-menu[2] = "Sound Up";
-menu[1] = "Sound Down";
+menu[2] = "Volume Up";
+menu[1] = "Volume Down";
 menu[0] = "Back";
 
 menu_items = array_length(menu);

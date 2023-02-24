@@ -17,35 +17,33 @@ if (menu_control) {
 	
 	if (keyboard_check_pressed(vk_enter)) {
 		menu_committed = menu_cursor;
-		menu_control = false;
 	}
 }
 
 if (menu_committed != -1) {
 	
-	if (!music_started) {
-	    audio_play_sound(snMusicBG, 100, true);
-		music_started = true;
-	}
 	switch (menu_committed) {
 		case 2: 
 		{
-			with (oCoots) {
-				if (!hasControl) {
-					hasControl = true;
-				}
+			if (volume < 1 ) {
+				volume += 0.1
+				audio_master_gain(volume);
+				audio_play_sound(snClick, 10, false);
 			}
-			in_menu = false;
 			menu_committed = -1;
 			break;
 		}
 		case 1: 
 		{
-			SlideTransitionOptions(room);
+			if (volume > 0 ) {
+				volume -= 0.1
+				audio_master_gain(volume);
+				audio_play_sound(snClick, 10, false);
+			}
 			menu_committed = -1;
 			break;
 		}
-		case 0: default: SlideTransistion(TRANS_MODE.GOTO, originRoom); break;
+		case 0: default: SlideTransistion(TRANS_MODE.BACK); break;
 	}
 	
 }

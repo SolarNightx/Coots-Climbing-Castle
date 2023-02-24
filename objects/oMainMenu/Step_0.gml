@@ -23,12 +23,16 @@ if (menu_control) {
 
 if (menu_committed != -1) {
 	
-	if (!music_started) {
-	    audio_play_sound(snMusicBG, 100, true);
-		music_started = true;
-	}
 	switch (menu_committed) {
-		case 2: default: SlideTransistion(TRANS_MODE.NEXT); break;
+		case 2: default: 
+		{
+			if (!music_started) {
+			    audio_play_sound(snMusicBG, 100, true);
+				music_started = true;
+			}
+			SlideTransistion(TRANS_MODE.NEXT); 
+			break;
+		}
 		case 1: SlideTransitionOptions(room); break;
 		case 0: game_end(); break;
 	}

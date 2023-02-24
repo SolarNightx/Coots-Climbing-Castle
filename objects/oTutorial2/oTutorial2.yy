@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWallSticky",
+  "name": "oTutorial2",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sWallSticky",
-    "path": "sprites/sWallSticky/sWallSticky.yy",
+    "name": "sTutorial2",
+    "path": "sprites/sTutorial2/sTutorial2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

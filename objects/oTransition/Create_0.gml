@@ -9,10 +9,12 @@ enum TRANS_MODE
 	NEXT,
 	GOTO,
 	RESTART,
-	INTRO
+	INTRO,
+	BACK
 }
 mode = TRANS_MODE.INTRO;
 percent = 1;
+prevRoom = room;
 target = room;
 in_menu = false;
 played_transistion_sn = false;

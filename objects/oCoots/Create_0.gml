@@ -45,7 +45,7 @@ StateFree = function() {
 	if (place_meeting(x,y+1,oWall) or place_meeting(x,y+1,oWallSticky)) {
 		hsp = move * walksp;
 	} else {
-		hsp += move / 12;
+		hsp += move / 18;
 		hsp = clamp(hsp, -walksp, walksp)*0.99;
 	}
 	vsp += grv;
@@ -82,9 +82,10 @@ StateFree = function() {
 		image_xscale = sign(hsp)*scale;
 	}
 	
-	if (!place_meeting(x, y+1, oWall) and place_meeting(x+sign(hsp), y, oWallSticky)) {
+	if (!place_meeting(x, y+1, oWall) and (place_meeting(x+sign(hsp), y, oWallSticky) or place_meeting(x+move, y, oWallSticky))) {
 		image_speed = 1;
 		sprite_index = sCootsWall;
+		image_index = 2;
 		state = StateWall;
 	}
 	
